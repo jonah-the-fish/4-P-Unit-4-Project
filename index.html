@@ -3,7 +3,7 @@ Requirements
 [ ] Three Distinct CSS font-family Declarations
 [ ] Five CSS Rules
 [ ] An Unordered **or** Ordered List (<ul> or <ol>)
-[ ] Three Images
+[ yes ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Fill Text with Image Background 
@@ -19,8 +19,19 @@ Select ONE Additional Feature to Add
 <head>
   <title>Unit 4 Project</title>
   <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Love+Ya+Like+A+Sister&family=Momo+Signature&display=swap" rel="stylesheet">
+
   <style>
-    table, th, td{border: 1px solid;}
+    table, th, td{
+      border: 1px solid;
+      background-color: rgb(233, 130, 34, .70);
+    }
+    img {border-radius:30px}
+    .meal {font-family: "Momo Signature", cursive;}
+    .snack {font-family: "Love Ya Like A Sister", cursive;}
+    .pizza {font-family: "Caesar Dressing", system-ui;}
   </style>
 </head>
 <body>
@@ -28,9 +39,9 @@ Select ONE Additional Feature to Add
   <center><h1>My Unofficial Flatbush/Central Brooklyn Food Crawl</h1>
   <img src="https://www.brownstoner.com/wp-content/uploads/2016/02/flatbush-brooklyn-neighborhood-3.png" width="500"></center><br>
   
-  <h3>Full Meals</h3>
+  <h3 class="meal">Full Meals</h3>
   <hr>
-  <table>
+  <table class="meal">
 	<thead>
 		<tr>
 			<th>Restaurant Name</th>
@@ -70,11 +81,11 @@ Select ONE Additional Feature to Add
       <td>$12 for full pita, $9 for half</td>
 		</tr>
      <tr>
-			<td>Ayat Ditmas Park</td>
-      <td>1618 Cortelyou Rd</td>
-      <td>Incredible middle eastern food with really lovely atmosphere</td>
-      <td>vegan platter for world's best eggplant</td>
-      <td>$12 for full pita, $9 for half</td>
+			<td>Quezada Restaurant</td>
+      <td>1212 Flatbush Ave</td>
+      <td>Build-your-own Dominican meal restaurant</td>
+      <td>Pollo Guisado</td>
+      <td>$10 for most entrees</td>
 		</tr>
 	</tbody>
 </table><br>
@@ -82,12 +93,12 @@ Select ONE Additional Feature to Add
 <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RtKQSFeJO0CjCuJfTZX_3KM37UakQ9Px_g6UmaSvXapKPKwXvvmurUmDxJk061r_zvxO3EYGxaA81_9y-YffsPi8knoxgshEn5wChwRMB3cP-gIpilPW9sXg3zWghSch-HHBbw3v3ERCTH=s680-w680-h510-rw" height="150">
 <img src="https://img.cdn4dd.com/p/fit=cover,width=1200,height=1200,format=auto,quality=70/media/photosV2/0b8e45bb-04d7-4b1e-8c57-83fb70dc581c-f951b7c0-72bd-472a-9832-c49742a06b8d-retina-large.jpg" height="150">
 <img src="https://www.getsauce.com/blobwpv24c7ebe2cb0/wp-content/uploads/sites/1536/2025/08/falafel-tanami-sabich-pita-769x1024.jpg" height="150">
-<img src="https://images.happycow.net/venues/1024/33/63/hcmp336362_2541882.jpeg" height="150"></center>
+<img src="https://cdn.gotoeat.net/quezadarestaurantcorp/25448-albums-3.jpg" height="150"></center>
   <br>
 
-  <h3>Pizza, Burgers, and Bagels</h3>
+  <h3 class="pizza">Pizza, Burgers, and Bagels</h3>
   <hr>
- <table>
+ <table class="pizza">
 	<thead>
 		<tr>
 			<th>Restaurant Name</th>
@@ -131,9 +142,9 @@ Select ONE Additional Feature to Add
 <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QwP1qjblzpHUH7nVfSehnGxQyN9oXwE5m7JnxJcFq1vSre8JQcVCkGs4JYmFLvrkDffflQEUZXZmPwkCmD8YUtuIS8EP9tnKjbgAIdsFepK_FhO0Cidjc7uWo_zEuzgHEm1t9P=s680-w680-h510-rw" height="150"></center>
 <br>
 
-  <h3>Drinks, Snacks, and Desserts</h3>
+  <h3 class="snack">Drinks, Snacks, and Desserts</h3>
   <hr>
-  <table>
+  <table class="snack">
 	<thead>
 		<tr>
 			<th>Restaurant Name</th>
@@ -162,20 +173,28 @@ Select ONE Additional Feature to Add
       <td>Chocolate Chip Cookie</td>
 		</tr>
     <tr>
-			<td>Falafel Tanami</td>
-      <td>1824 Avenue M</td>
-      <td>A locally beloved and critically acclaimed falafel joint with coutner ordering</td>
-      <td>Full Falafel pita, fix-ins plus garlic sauce</td>
+			<td>Ostrovitsky Bakery</td>
+      <td>1124 Avenue J</td>
+      <td>A warm bakery with Jewish baked goods and other sugary fix-ins</td>
+      <td>Cinnamon roll</td>
 		</tr>
      <tr>
-			<td>Ayat Ditmas Park</td>
-      <td>1618 Cortelyou Rd</td>
-      <td>Incredible middle eastern food with really lovely atmosphere</td>
-      <td>vegan platter for world's best eggplant</td>
+			<td>Lahori Chilli</td>
+      <td>1026 Coney Island Avenue</td>
+      <td>Bustling Pakistani establishment with great snacks and a little bit of chaos</td>
+      <td>Chicken samosa and a mango lassi</td>
 		</tr>
 	</tbody>
 </table>
-  <br><br>
+  <br>
+  <center>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaXmFvrXa46uNmGGgZrINoxqI8_7mYGolLBxuVnhGaZw&s" height="150">
+    <img src="https://www.mightysweet.com/wp-content/uploads/2011/04/07-Doubles-De-Hot-Pot.jpg" height="150">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5j5kaAN6gfSbgPoWo-kQ-FcpM8Q4_j453b37GKW1PEw-Z9Npcuq7a2Q&s=10" height="150">
+    <img src="https://s.yimg.com/bj/8a11/8a1182ccaaa5d18b7b488f588e254d92.jpg" height="150">
+    <img src="https://www.lahorichilliny.com/_next/image?url=https%3A%2F%2Fdtwaeonhht2im.cloudfront.net%2F2feded0b8a60dba98494aac8ef078b2a.jpg&w=3840&q=75" height="150">
+  </center>
+  <br>
 
 </body>
 </html>
